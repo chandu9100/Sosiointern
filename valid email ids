@@ -1,0 +1,9 @@
+#finding vaild email ids
+import re
+mails=""
+for _ in range(int(input())):
+    Mid=input()#mail id input
+    mails=mails+" "+Mid
+lst = re.findall('[a-zA-Z0-9]+@[a-z]+.com', mails)# finding email ids that are valid
+for i in lst: 
+    print(i)
